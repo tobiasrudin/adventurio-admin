@@ -1,0 +1,5 @@
+.Main {
+  background-color: var(--main-primary-dark);
+  height: 100vh;
+  width: 200vw;
+}
