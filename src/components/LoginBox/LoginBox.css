@@ -1,0 +1,7 @@
+.login-box-main {
+  background-color: var(--main-accent-dark);
+  border-radius: var(--big-radius);
+  box-shadow: var(--big-shadow);
+  height: 25rem;
+  width: 35rem;
+}

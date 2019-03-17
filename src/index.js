@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import "./index.css";
-import Main from "./Main";
+import Login from "./components/Login/Login";
 import * as serviceWorker from "./serviceWorker";
 import { createStore } from "redux";
 import rootReducer from "./store/rootReducer";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const store = createStore(rootReducer);
 
@@ -13,7 +14,9 @@ const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <Provider store={store}>
-    <Main />
+    <Router>
+      <Route path="/" component={Login} />
+    </Router>
   </Provider>,
   rootElement
 );

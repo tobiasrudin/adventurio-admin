@@ -3,11 +3,11 @@
 ## CSS Colour palette
 
 ```
-  --main-primary-dark: rgba(46, 196, 182, 1);
-  --main-primary-light: rgba(203, 243, 240, 1);
-  --main-accent-dark: rgba(255, 159, 28, 1);
-  --main-accent-light: rgba(255, 191, 105, 1);
-  --main-background: rgba(255, 255, 255, 1);
+  --main-primary-dark: rgba(42, 179, 166, 1);
+  --main-primary-light: rgba(185, 221, 219, 1);
+  --main-accent-dark: rgba(232, 145, 26, 1);
+  --main-accent-light: rgba(232, 174, 96, 1);
+  --main-background: rgba(232, 232, 232, 1);
 ```
 
 Generated from [Coolors](https://coolors.co/ff9f1c-ffbf69-ffffff-cbf3f0-2ec4b6).
