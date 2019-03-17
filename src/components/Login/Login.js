@@ -3,7 +3,7 @@ import "./Login.css";
 import LoginInfo from "../LoginInfo/LoginInfo";
 import tropicalBeachImage from "../../images/tropical-beach.jpg";
 import japanImage from "../../images/japan.jpg";
-import CrossfadeImage from "react-crossfade-image";
+import CrossfadeImage from "react-crossfade-image/index.es5";
 import whiteImage from "../../images/white-image.png";
 
 let imageSrc = japanImage;
