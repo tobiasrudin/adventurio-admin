@@ -1,28 +1,24 @@
 import React, { Component } from "react";
 import "./Login.css";
 import LoginInfo from "../LoginInfo/LoginInfo";
-import tropicalBeachImage from "../../images/tropical-beach.jpg";
-import japanImage from "../../images/japan.jpg";
 import CrossfadeImage from "react-crossfade-image/index.es5";
 import whiteImage from "../../images/white-image.png";
+import imageArray from "./images";
 
-let imageSrc = japanImage;
 let imageIndex = 0;
 let interval;
 
 class Login extends Component {
   state = {
-    imageSrc: tropicalBeachImage
+    imageSrc: imageArray[0]
   };
   componentDidMount() {
-    const imageArray = [tropicalBeachImage, japanImage];
     const setImageSrc = () => {
       ++imageIndex;
       if (imageIndex >= imageArray.length) {
         imageIndex = 0;
       }
-      imageSrc = imageArray[imageIndex];
-      this.setState({ imageSrc: imageSrc });
+      this.setState({ imageSrc: imageArray[imageIndex] });
     };
     interval = setInterval(setImageSrc, 15000);
   }
@@ -49,9 +45,9 @@ class Login extends Component {
         <div className="text-container">
           <div className="title-item">
             <p className="title-text">ADVENTÜRIO</p>
-            <p className="title-sub-text">The adventure starts here</p>
+            <p className="title-sub-text">The journey starts here</p>
           </div>
-          <div className="text-item">
+          <div className="login-item">
             <LoginInfo />
           </div>
         </div>
