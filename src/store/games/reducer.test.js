@@ -3,7 +3,7 @@ import reducer from "./reducer";
 
 const initialState = Immutable({});
 
-describe("todos reducer", () => {
+describe("games reducer", () => {
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual(initialState);
   });

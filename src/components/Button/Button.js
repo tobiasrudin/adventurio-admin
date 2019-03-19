@@ -6,7 +6,7 @@ class Button extends Component {
     return (
       <button
         onClick={this.props.onClick}
-        className={`${this.props.colour} ${this.props.buttonStyle}`}
+        className={`${this.props.colour} ${this.props.buttonstyle}`}
       >
         {this.props.text}
       </button>

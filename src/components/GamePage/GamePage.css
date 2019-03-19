@@ -1,0 +1,24 @@
+.grid-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  display: grid;
+  grid: auto-flow / 40% 60%;
+}
+
+.text-item {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-primary-light);
+}
+
+.map-item {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-accent-light);
+}
